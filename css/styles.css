@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 :root {
     --red: #dc3545;
 }
@@ -5,13 +6,21 @@
     margin: 0;
     padding: 0;
     box-sizing: none;
+    font-family: "Oswald", sans-serif;
 }
 /* header start */
 .header {
+    background-image: linear-gradient( to bottom, #920a1e 0, #ac2a2aa6 50%, #d4bcb000 100%);
+    backdrop-filter: blur(1px);
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
 }
 
 .header-logo {
-    width: 53pt;
+    width: 60pt;
 }
 
 .talk-to-me-btn {
@@ -19,11 +28,10 @@
     color: #fff;
     background-color: #920A1E;
     text-transform: uppercase;
-    padding: 27px 44px;
-    border-radius: 12px;
+    padding: 15px 44px;
+    border-radius: 21px;
     font-size: 18px;
     font-weight: 600;
-    font-family: Helvetica, sans-serif;
     border: 2px solid #fff;
     letter-spacing: 1px;
     transition: .3s;
