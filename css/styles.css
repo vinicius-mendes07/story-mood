@@ -116,6 +116,7 @@ a{
 
 .packs-container {
     margin-top: 75px;
+    padding-bottom: 75px;
     display: flex;
     gap: 50px;
     align-items: center;
@@ -163,11 +164,16 @@ a{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
+}
+#fem-goodies {
+    font-size: 12px;
+    width: 100%;
 }
 
 .info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
@@ -180,6 +186,13 @@ a{
     font-size: 11pt;
     font-weight: 500;
     line-height: 1.2;
+}
+
+select {
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .cta {
