@@ -69,7 +69,7 @@ export function itemModal() {
     itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus '
 
     const itemImage = document.createElement('img')
-    itemImage.src = '../assets/images/logo-story-mood.png'
+    itemImage.src = '../assets/images/story-mood.png'
     itemImage.style = `
         width: 100px
     `
