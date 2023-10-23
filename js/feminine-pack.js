@@ -3,9 +3,9 @@ import fetcher from "./fetcher.js"
 
 function femininePack() {
     // obtendo os dados dos pack
-    fetcher().then((packs) => {
+    fetcher().then((data) => {
         // obtendo somente o pack necessário
-        const femininePack = packs.femininePack
+        const femininePack = data.femininePack
         const cardList = document.getElementById('feminine-list')
     
         // criando os selects dinamicamente com os dados passados
