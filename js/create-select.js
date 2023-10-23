@@ -1,7 +1,7 @@
 import { createOption } from "./create-option.js"
 import { itemModal } from "./item-modal.js"
 
-export function createSelect(category) {
+export function createSelect(category, selectName) {
     // elemento que envolve o select
     const li = document.createElement('li')
     li.classList.add('info')
@@ -15,7 +15,7 @@ export function createSelect(category) {
     // criando o select
     const select = document.createElement('select')
     select.classList.add('info-text')
-    select.name = category.categoryName
+    select.name = selectName
     select.id = category.categoryName
 
     // criando a primeira opção do select
@@ -36,19 +36,22 @@ export function createSelect(category) {
     li.append(image)
     li.append(select)
 
-    const modal = itemModal()
+    const {selectInfoWrapper, itemTitle, price, itemDescription, itemImage} = itemModal()
+
     select.addEventListener('change', () => {
-        if(select.selectedOptions[0].value === '') {
-            modal.style.visibility = 'hidden'
-            // modal.opacity = 0
+        const selectedOption = select.selectedOptions[0].value
+        if(selectedOption === '') {
+            selectInfoWrapper.style.visibility = 'hidden'
         } else {
-            modal.style.visibility = 'visible'
-            // modal.opacity = 1
+            selectInfoWrapper.style.visibility = 'visible'
+            const index = category.items.findIndex((item) => item.name === selectedOption)
+            if(index !== -1) {
+                price.textContent = category.items[index].price + '€'
+            }
         }
-        console.log(modal)
     })
 
-        li.appendChild(modal)
+        li.appendChild(selectInfoWrapper)
 
 
     return li

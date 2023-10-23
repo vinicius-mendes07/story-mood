@@ -11,7 +11,7 @@ async function femininePack() {
 
     // criando os selects dinamicamente com os dados passados
     femininePack.forEach(pack => {
-        const listItem = createSelect(pack)
+        const listItem = createSelect(pack, 'femininePack')
         cardList.appendChild(listItem)
     });
 }

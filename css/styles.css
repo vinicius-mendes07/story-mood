@@ -297,6 +297,15 @@ select {
     font-size: 14px;
 } */
 
+.total-price {
+    text-align: start;
+    width: 100%;
+    color: #000;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .start-now-btn {
     font-size: 18px;
     color: #fbfbfb;
@@ -306,7 +315,7 @@ select {
     padding: 14px 43px;
     font-weight: 600;
     border-radius: 15pt;
-    margin-top: 15px;
+    margin-top: 5px;
     cursor: pointer;
     transition: 0.3s;
 }

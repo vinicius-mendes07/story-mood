@@ -58,7 +58,7 @@ export function itemModal() {
     itemTitle.textContent = 'item title'
 
     const price = document.createElement('span')
-    price.textContent = '1,4€'
+    price.textContent = '0,0€'
     price.style = `
     color: var(--dark-red);
     font-weight: 500;
@@ -84,5 +84,11 @@ export function itemModal() {
     selectInfoWrapper.appendChild(infoImage)
     selectInfoWrapper.appendChild(selectInfo)
 
-    return selectInfoWrapper
+    return {
+        selectInfoWrapper,
+        itemTitle,
+        price,
+        itemDescription,
+        itemImage
+    }
 }
