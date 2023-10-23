@@ -168,23 +168,29 @@ a {
     height: 16px;
 }
 
-.info-icon:hover~.pack-explanation {
-    opacity: 1;
-}
 
 .pack-explanation {
     position: absolute;
     background-color: #fff;
-    width: 300px;
+    width: 280px;
     padding: 20px;
     border-radius: 10px;
-    top: 0;
-    left: 100%;
+    /* top: 0;
+    left: 100%; */
+    top: 100%;
+        bottom: auto;
+        left: -15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
     transition: .3s;
+    z-index: 2;
+    visibility: hidden;
 }
 
+.info-icon:hover~.pack-explanation {
+    opacity: 1;
+    visibility: visible;
+}
 .explanation-text {}
 
 .pack-subtitle {
@@ -320,14 +326,10 @@ select {
     .sec-2 {
         padding: 0;
     }
-
-    .pack-title-wrapper {
-        background-color: red;
-    }
-
+    
     .pack-explanation {
-        top: auto;
-        bottom: 100%;
-        left: -15%;
+        top: 100%;
+        bottom: auto;
+        left: -15px;
     }
 }
