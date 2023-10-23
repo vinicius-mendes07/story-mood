@@ -9,7 +9,7 @@ export function createSelect(category, selectName) {
     // imagem de check
     const image = document.createElement('img')
     image.classList.add('check-img')
-    image.src = '../assets/images/check.svg'
+    image.src = './assets/images/check.svg'
     image.alt = 'check image'
 
     // criando o select
