@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
 :root {
     --red: #dc3545;
     --dark-red: #920a1e;
     --text-dark: #080708;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: none;
     font-family: "Oswald", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
+
 /* header start */
 .header {
-    background-image: linear-gradient( to bottom, #920a1e 0, #ac2a2aa6 50%, #d4bcb000 100%);
+    background-image: linear-gradient(to bottom, #920a1e 0, #ac2a2aa6 50%, #d4bcb000 100%);
     backdrop-filter: blur(1px);
     height: 105px;
     display: flex;
@@ -45,13 +49,15 @@ a{
     letter-spacing: 1px;
     transition: .3s;
 }
+
 .talk-to-me-btn:hover {
     background-color: #4E0308;
 }
+
 /* header end */
 
 /* section 1 start */
-.sec-1{
+.sec-1 {
     background-image: url(../assets/images/foto-packs.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -79,16 +85,19 @@ a{
     align-items: center;
     gap: 20px;
 }
-.tiktok{
+
+.tiktok {
     transform: scale(0.58);
 }
-.tiktok:hover{
-    filter: invert(55%) sepia(49%) saturate(174%) brightness(74%) contrast(649%)!important;
+
+.tiktok:hover {
+    filter: invert(55%) sepia(49%) saturate(174%) brightness(74%) contrast(649%) !important;
 }
 
 .insta {
     transform: scale(0.9);
 }
+
 .insta:hover {
     filter: invert(0%);
 }
@@ -97,6 +106,7 @@ a{
     width: 50px;
     filter: invert(125%) sepia(139%) saturate(08%) hue-rotate(319deg) brightness(143%) contrast(81%);
 }
+
 /* section 1 end */
 
 /* section 2 start */
@@ -132,7 +142,7 @@ a{
     padding: 36px 24px 36px 24px;
     height: 470px;
     border-radius: 25px;
-    background: linear-gradient( 0deg, rgba(195, 8, 8, 0.84) 0, rgba(195, 8, 8, 0.27) 22.92%, rgba(217, 217, 217, 0) 50%, rgba(217, 217, 217, 0) 70.73%, rgba(217, 217, 217, 0) 80.73%);
+    background: linear-gradient(0deg, rgba(195, 8, 8, 0.84) 0, rgba(195, 8, 8, 0.27) 22.92%, rgba(217, 217, 217, 0) 50%, rgba(217, 217, 217, 0) 70.73%, rgba(217, 217, 217, 0) 80.73%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -144,6 +154,7 @@ a{
     color: var(--text-dark);
     text-transform: uppercase;
 }
+
 .pack-title-wrapper {
     display: flex;
     gap: 5px;
@@ -151,12 +162,13 @@ a{
     position: relative;
     width: fit-content;
 }
+
 .info-icon {
     width: 16px;
     height: 16px;
 }
 
-.info-icon:hover ~ .pack-explanation {
+.info-icon:hover~.pack-explanation {
     opacity: 1;
 }
 
@@ -173,9 +185,8 @@ a{
     transition: .3s;
 }
 
-.explanation-text {
+.explanation-text {}
 
-}
 .pack-subtitle {
     font-weight: 400;
     color: var(--text-dark);
@@ -235,6 +246,7 @@ select {
     flex-direction: column;
     align-items: center;
 }
+
 /*
 .slider-wrapper {
     display: flex;
@@ -279,9 +291,6 @@ select {
     font-size: 14px;
 } */
 
-.start-now-link {
-
-}
 .start-now-btn {
     font-size: 18px;
     color: #fbfbfb;
@@ -295,9 +304,30 @@ select {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .start-now-btn:hover {
     background-color: #650404;
 }
 
 
 /* section 2 end */
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 10%;
+    }
+
+    .sec-2 {
+        padding: 0;
+    }
+
+    .pack-title-wrapper {
+        background-color: red;
+    }
+
+    .pack-explanation {
+        top: auto;
+        bottom: 100%;
+        left: -15%;
+    }
+}
