@@ -11,7 +11,7 @@ export function itemModal() {
     `
     // imagem que ativa o modal
     const infoImage = document.createElement('img')
-    infoImage.src = '../assets/images/question-icon.svg'
+    infoImage.src = './assets/images/question-icon.svg'
     infoImage.alt = 'question icon'
     infoImage.style = `
         width:16px;
@@ -69,7 +69,7 @@ export function itemModal() {
     itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus '
 
     const itemImage = document.createElement('img')
-    itemImage.src = '../assets/images/story-mood.png'
+    itemImage.src = './assets/images/story-mood.png'
     itemImage.style = `
         width: 100px
     `

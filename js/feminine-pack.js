@@ -1,9 +1,9 @@
 import { createSelect } from "./create-select.js"
 import fetcher from "./fetcher.js"
 
-function femininePack() {
+async function femininePack() {
     // obtendo os dados dos pack
-    fetcher().then((data) => {
+    const data = await fetcher()
         // obtendo somente o pack necessário
         const femininePack = data.femininePack
         const cardList = document.getElementById('feminine-list')
@@ -13,8 +13,6 @@ function femininePack() {
             const listItem = createSelect(pack, 'femininePack')
             cardList.appendChild(listItem)
         });
-    })
-
 }
 
 femininePack()
