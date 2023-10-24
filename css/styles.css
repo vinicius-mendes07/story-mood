@@ -17,12 +17,15 @@ a {
     text-decoration: none;
     color: inherit;
 }
+body {
+    min-height: 100vh;
+}
 
 /* header start */
 .header {
     background-image: linear-gradient(to bottom, #920a1e 0, #ac2a2aa6 50%, #d4bcb000 100%);
     backdrop-filter: blur(1px);
-    height: 105px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +117,7 @@ a {
 .sec-2 {
     background-color: #DFD2CD;
     padding: 0 100px;
+    padding-bottom: 120px;
 }
 
 .sec-title {
@@ -127,7 +131,6 @@ a {
 
 .packs-container {
     margin-top: 75px;
-    padding-bottom: 75px;
     display: flex;
     gap: 50px;
     align-items: center;
@@ -174,13 +177,11 @@ a {
     position: absolute;
     background-color: #fff;
     width: 280px;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
-    /* top: 0;
-    left: 100%; */
     top: 100%;
-        bottom: auto;
-        left: -15px;
+    bottom: auto;
+    left: -15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
     transition: .3s;
@@ -192,7 +193,10 @@ a {
     opacity: 1;
     visibility: visible;
 }
-.explanation-text {}
+
+.explanation-text {
+    font-size: 14px;
+}
 
 .pack-subtitle {
     font-weight: 400;
@@ -333,10 +337,28 @@ select {
         padding: 0 10%;
     }
 
-    .sec-2 {
-        padding: 0;
+    .header {
+        height: 85px;
     }
     
+    .header-logo {
+        width: 60pt;
+    }
+    
+    .talk-to-me-btn {
+        padding: 10px 34px;
+        font-size: 16px;
+    }
+
+    .sec-2 {
+        padding: 0;
+        padding-bottom: 120px;
+    }
+
+    .sec-title {
+        font-size: 40px;
+    }
+
     .pack-explanation {
         top: 100%;
         bottom: auto;

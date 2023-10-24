@@ -1,26 +1,35 @@
-// async function feminineCalc() {
+import fetcher from "./fetcher.js"
 
-// const packs = await fetcher()
-// const femininePack = packs.femininePack
+export async function feminineCalc() {
 
-//     if (!window !== 'undefined') {
-//         const selects = document.getElementsByName('femininePack')
-//         const total = 0
-//         selects.forEach((select) => {
-//             select.addEventListener("change", () => {
-//                 const selectedOption = select.selectedOptions[0].value
-//                 if (selectedOption !== '') {
-//                     const index = category.items.findIndex((item) => item.name === selectedOption)
-//                     if (index !== -1) {
-//                         pack.
-//                         total +=
-//                     }
-//                 }
-//             })
-//         })
-//     }
-// }
+    const data = await fetcher()
+    const femininePack = data.femininePack
 
-// function calcTotal(values) {
-//     values.reduce((sum, item) => sum += item, 0)
-// }
+    if (window !== 'undefined') {
+        const selects = document.getElementsByName('femininePack')
+        selects.forEach((select) => {
+            select.addEventListener("change", () => {
+                const selects = document.getElementsByName('femininePack')
+                let total = 0
+
+                selects.forEach((select) => {
+                    const selectedOptionValue = select.selectedOptions[0].value
+                    if (selectedOptionValue !== '') {
+                        femininePack.forEach((category) => {
+                            category.items.forEach((item) => {
+                                if (item.name === selectedOptionValue) {
+                                    const itemPrice = Number(item.price).toFixed(2)
+                                    console.log(itemPrice)
+                                    total += Number(item.price)
+                                    console.log(total)
+                                }
+                            })
+                        })
+                    }
+                })
+                const femTotal = document.getElementById('fem-total-price')
+                femTotal.textContent = total.toFixed(2) + '€'
+            })
+        })
+    }
+}

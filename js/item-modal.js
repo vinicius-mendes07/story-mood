@@ -51,7 +51,7 @@ export function itemModal() {
     titleAndPrice.style = `
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         `
 
     const itemTitle = document.createElement('h4')
@@ -66,7 +66,11 @@ export function itemModal() {
     `
 
     const itemDescription = document.createElement('p')
-    itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus '
+    itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus'
+    itemDescription.style = `
+        font-size: 14px;
+        margin-bottom: 5px;
+    `
 
     const itemImage = document.createElement('img')
     itemImage.src = './assets/images/story-mood.png'

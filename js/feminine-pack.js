@@ -1,4 +1,5 @@
 import { createSelect } from "./create-select.js"
+import { feminineCalc } from "./feminime-calc.js"
 import fetcher from "./fetcher.js"
 
 async function femininePack() {
@@ -13,6 +14,8 @@ async function femininePack() {
             const listItem = createSelect(pack, 'femininePack')
             cardList.appendChild(listItem)
         });
+
+        feminineCalc()
 }
 
 femininePack()
