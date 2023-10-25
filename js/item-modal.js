@@ -24,6 +24,8 @@ export function itemModal() {
         selectInfo.style.visibility = 'visible'
     })
 
+    infoImage.addEventListener('click', () => 0)
+
     // evento para desativar o modal
     infoImage.addEventListener('mouseout', () => {
         selectInfo.style.opacity = '0'

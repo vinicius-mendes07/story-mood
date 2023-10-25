@@ -189,7 +189,7 @@ body {
     visibility: hidden;
 }
 
-.info-icon:hover~.pack-explanation {
+.info-icon:hover ~.pack-explanation {
     opacity: 1;
     visibility: visible;
 }
