@@ -1,6 +1,7 @@
-import { btnClick } from "./btn-click.js"
-import fetcher from "./fetcher.js"
+import { btnClick } from "../btn-click.js"
+import fetcher from "../fetcher.js"
 
+// função para executar a ação de click no pack feminino estagiario
 async function femBtnClick() {
     const selects = document.getElementsByName('femininePack')
 

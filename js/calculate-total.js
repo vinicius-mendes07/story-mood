@@ -1,3 +1,4 @@
+// função para calcular o valor total de um pack
 export function calculateTotal(selects, pack) {
 
     let total = 0

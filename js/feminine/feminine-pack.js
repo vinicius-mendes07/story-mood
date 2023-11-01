@@ -1,7 +1,8 @@
-import { createSelect } from "./create-select.js"
+import { createSelect } from "../create-select.js"
 import { feminineCalc } from "./feminime-calc.js"
-import fetcher from "./fetcher.js"
+import fetcher from "../fetcher.js"
 
+// função para criar os selects do pack feminino estagiario
 async function femininePack() {
     // obtendo os dados dos pack
     const data = await fetcher()
