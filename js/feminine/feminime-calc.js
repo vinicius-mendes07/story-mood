@@ -7,10 +7,9 @@ export async function feminineCalc() {
     const femininePack = data.femininePack
 
     if (window !== 'undefined') {
-        const selects = document.getElementsByName('femininePack')
+        const selects = document.getElementsByName('feminine-pack')
         selects.forEach((select) => {
             select.addEventListener("change", () => {
-                const selects = document.getElementsByName('femininePack')
 
                 const total = calculateTotal(selects, femininePack)
 

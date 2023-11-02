@@ -1,4 +1,4 @@
-export function btnClick(selects, pack) {
+export function mountMessage(selects, pack) {
     let go = false
     for (let i = 0; i < selects.length; i++) {
         const selectedOptionValue = selects[i].selectedOptions[0].value

@@ -2,7 +2,6 @@ export function itemModal() {
     // cria a div que vai conter o modal
     const selectInfoWrapper = document.createElement('div')
     selectInfoWrapper.style = `
-        // width: fit-content;
         position: relative;
         height: 16px;
         width: 16px;
@@ -38,7 +37,7 @@ export function itemModal() {
         background-color: #fff;
         position: absolute;
         width: 280px;
-        padding: 20px;
+        padding: 15px 20px;
         border-radius: 10px;
         top: 100%;
         right: -15px;
@@ -49,6 +48,16 @@ export function itemModal() {
         visibility: hidden;
     `
 
+    selectInfo.addEventListener('mouseover', () => {
+        selectInfo.style.opacity = 1
+        selectInfo.style.visibility = 'visible'
+    })
+
+    selectInfo.addEventListener('mouseout', () => {
+        selectInfo.style.opacity = 0
+        selectInfo.style.visibility = 'hidden'
+    })
+
     const titleAndPrice = document.createElement('div')
     titleAndPrice.style = `
         display: flex;
@@ -56,8 +65,8 @@ export function itemModal() {
         margin-bottom: 5px;
         `
 
-    const itemTitle = document.createElement('h4')
-    itemTitle.textContent = 'item title'
+    const itemName = document.createElement('h4')
+    itemName.textContent = 'item name'
 
     const price = document.createElement('span')
     price.textContent = '0,0€'
@@ -68,19 +77,22 @@ export function itemModal() {
     `
 
     const itemDescription = document.createElement('p')
-    itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus'
+    itemDescription.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem labore et autem eligendi quos necessitatibus deleniti aliquam nostrum, quam ullam accusamus'
     itemDescription.style = `
         font-size: 14px;
         margin-bottom: 5px;
+        max-height: 90px;
+        overflow: auto;
     `
 
     const itemImage = document.createElement('img')
     itemImage.src = './assets/images/story-mood.png'
+    itemImage.alt= 'image of the item'
     itemImage.style = `
-        width: 100px
+        width: 100px;
     `
 
-    titleAndPrice.appendChild(itemTitle)
+    titleAndPrice.appendChild(itemName)
     titleAndPrice.appendChild(price)
 
     selectInfo.appendChild(titleAndPrice)
@@ -92,7 +104,7 @@ export function itemModal() {
 
     return {
         selectInfoWrapper,
-        itemTitle,
+        itemName,
         price,
         itemDescription,
         itemImage

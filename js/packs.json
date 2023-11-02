@@ -148,66 +148,91 @@
     "misteriousCouplePack": [
         {
             "categoryName": "Lubrificante",
-            "item": {
-                "name": "Lubrificante Padrão Alta Qualidade",
-                "price": "5",
-                "description": "100ml Tubo com fecho inviolável. Garantia máxima de qualidade. Base de água Neutro, incolor e inodoro. Vegano e dermatologicamente testado. Textura macia e sedosa. Fácil de distribuir. Muito escorregadio. Não deixa restos. Não é pegajoso. Formato adequado para viajar na cabine do avião Não contém fragrâncias ou óleos. Adequado com preservativos de látex e brinquedos eróticos. Propriedades hidratantes. Solúvel em água. Fabricado na Europa",
-                "imageUrl": "./assets/images/pack-casal-misterioso/lubrificante-padrao-alta-qualidade.jpeg"
-            }
+            "items": [
+                {
+                    "name": "Lubrificante Padrão Alta Qualidade",
+                    "price": "5",
+                    "description": "100ml Tubo com fecho inviolável. Garantia máxima de qualidade. Base de água Neutro, incolor e inodoro. Vegano e dermatologicamente testado. Textura macia e sedosa. Fácil de distribuir. Muito escorregadio. Não deixa restos. Não é pegajoso. Formato adequado para viajar na cabine do avião Não contém fragrâncias ou óleos. Adequado com preservativos de látex e brinquedos eróticos. Propriedades hidratantes. Solúvel em água. Fabricado na Europa",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/lubrificante-padrao-alta-qualidade.jpeg"
+                }
+            ]
         },
         {
             "categoryName": "Submissão",
-            "item": {
-                "name": "Conjunto submissão 4 peças",
-                "price": "18",
-                "description": "1.Mordaça, 2.Algemas, 3.Flogger, 4.Máscara",
-                "imageUrl": "./assets/images/pack-casal-misterioso/conjunto-submissao-4-pecas.jpeg"
-            }
+            "items": [
+                {
+                    "name": "Conjunto submissão 4 peças",
+                    "price": "18",
+                    "description": "Mordaça, Algemas, Flogger, Máscara",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/conjunto-submissao-4-pecas.jpeg"
+                }
+            ]
         },
         {
             "categoryName": "Ovo vibratório",
-            "item": {
-                "name": "Ovo vibratório controle remoto",
-                "price": "8",
-                "description": "10 funções de vibração, Controle remoto sem fio, Vibrações potentes, Sensação suave como seda, Motor poderoso, Inclui capa de chuva, Alimentado por 2 pilhas AAA (não incluídas) para o ovo",
-                "imageUrl": "./assets/images/pack-casal-misterioso/ovo-vibratorio-controle-remoto.png"
-            }
+            "items": [
+                {
+                    "name": "Ovo vibratório controle remoto",
+                    "price": "8",
+                    "description": "10 funções de vibração, Controle remoto sem fio, Vibrações potentes, Sensação suave como seda, Motor poderoso, Inclui capa de chuva, Alimentado por 2 pilhas AAA (não incluídas) para o ovo",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/ovo-vibratorio-controle-remoto.png"
+                }
+            ]
         },
         {
-            "categoryName": "Vitalidade",
-            "item": {
-                "name": "Ajudinha Extra para Manter a Bandeira Erguida Creme para Melhorar Ereção e Fluxo, Natural",
-                "price": "5.75",
-                "description": "Este creme é elaborado a partir de extratos naturais de plantas, incluindo o ginkgo biloba. Ele é projetado para aprimorar o fluxo sanguíneo e promover ereções mais fortes. A aplicação é simples e conveniente, basta usar uma pequena quantidade no pênis e áreas adjacentes. Além disso, ajuda a melhorar a flexibilidade devido às propriedades nutritivas do óleo de amêndoa, manteiga de karité, óleo de semente de jojoba e arnica montana.",
-                "imageUrl": "./assets/images/pack-casal-misterioso/creme-para-melhorar-ereção-fluxo-natural.png"
-            }
+            "categoryName": "Vitalidade. Ajudinha Extra para Manter a Bandeira Erguida",
+            "items": [
+                {
+                    "name": "Creme para Melhorar Ereção e Fluxo",
+                    "price": "5.75",
+                    "description": "Este creme é elaborado a partir de extratos naturais de plantas, incluindo o ginkgo biloba. Ele é projetado para aprimorar o fluxo sanguíneo e promover ereções mais fortes. A aplicação é simples e conveniente, basta usar uma pequena quantidade no pênis e áreas adjacentes. Além disso, ajuda a melhorar a flexibilidade devido às propriedades nutritivas do óleo de amêndoa, manteiga de karité, óleo de semente de jojoba e arnica montana.",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/creme-para-melhorar-ereção-fluxo-natural.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "Vitalidade. Ajudinha Extra para Manter a Fantasia. Sem tabu.",
+            "items": [
+                {
+                    "name": "Dildo ajustável com 21,5",
+                    "price": "13",
+                    "description": "Com este arnês confortável e fácil de usar, você estará sexy e pronto para passar algumas noites incríveis. O dildo de silicone incluído é moldado para um realismo superior com um corpo de veado e glande. Perfeitamente preparado para estimular suas áreas mais sensíveis. Projetado nos EUA com os mais rígidos padrões de qualidade. Características: Flexível, Medidas: 21,5 cm x 4,5 cm",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/dildo-ajustavel-com-21-5.png"
+                }
+            ]
         },
         {
             "categoryName": "Estimulador",
-            "item": {
-                "name": "Latetobed heady estimulador con 4 cabezales púrpura",
-                "price": "2.49",
-                "description": "Latetobed heady estimulador con 4 cabezales púrpura",
-                "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-heady-estimulador-con-4-cabezales-purpura.png"
-            }
+            "items": [
+                {
+                    "name": "Latetobed heady estimulador con 4 cabeças roxo",
+                    "price": "6",
+                    "description": "Heady é feito de materiais de alta qualidade, macios e sedosos, proporcionando uma experiência máxima de prazer. Seu design compacto, ergonômico, elegante e sensual permite que você o leve para onde quiser, desfrutando-o a qualquer momento, em qualquer lugar. Pode ser usado para masturbação, estimulação erótica ou para intensificar a experiência nos relacionamentos. Nunca é demais ter um amigo extra. Características: 1 Modo de vibração, 4 cabeçotes intercambiáveis, Base giratória fácil, Alimentado por 1 bateria AA (não incluída), Recomenda-se o uso de lubrificante à base de água, Medidas: 10,7 cm x 2,5 cm",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-heady-estimulador-con-4-cabezales-purpura.png"
+                }
+            ]
         },
         {
             "categoryName": "Anel vibratório",
-            "item": {
-                "name": "Latetobed horizon anillo vibrador con conejito transparente",
-                "price": "3.25",
-                "description": "Latetobed horizon anillo vibrador con conejito transparente ",
-                "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-horizon-anillo-vibrador-con-conejito-transparente.png"
-            }
+            "items": [
+                {
+                    "name": "Latetobed horizon anillo vibrador con conejito transparente",
+                    "price": "3.25",
+                    "description": "Latetobed horizon anillo vibrador con conejito transparente ",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-horizon-anillo-vibrador-con-conejito-transparente.png"
+                }
+            ]
         },
         {
             "categoryName": "Mordaça",
-            "item": {
-                "name": "Latetobed bdsm line mordaza forma de boca negro",
-                "price": "8",
-                "description": "Latetobed bdsm line mordaza forma de boca negro",
-                "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-bdsm-line-mordaza-forma-de-boca-negro.png"
-            }
+            "items": [
+                {
+                    "name": "Latetobed bdsm line mordaza forma de boca negro",
+                    "price": "8",
+                    "description": "Latetobed bdsm line mordaza forma de boca negro",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/latetobed-bdsm-line-mordaza-forma-de-boca-negro.png"
+                }
+            ]
         }
     ]
 }

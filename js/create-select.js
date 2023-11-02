@@ -18,13 +18,15 @@ export function createSelect(category, selectName) {
     select.name = selectName
     select.id = category.categoryName
 
-    // criando a primeira opção do select
-    const firstOption = document.createElement('option')
-    firstOption.value = ''
-    firstOption.textContent = category.categoryName
-    firstOption.selected = true
-    firstOption.disabled = true
-    select.appendChild(firstOption)
+    // criando a primeira opção do select caso tenha mais de um item
+    if (category.items.length > 1) {
+        const firstOption = document.createElement('option')
+        firstOption.value = ''
+        firstOption.textContent = category.categoryName
+        firstOption.selected = true
+        firstOption.disabled = true
+        select.appendChild(firstOption)
+    }
 
     // criando as demais opções com base nos dados passados
     category.items.forEach(item => {
@@ -36,39 +38,41 @@ export function createSelect(category, selectName) {
     li.append(image)
     li.append(select)
 
-    const {selectInfoWrapper, itemTitle, price, itemDescription, itemImage} = itemModal()
+    const { selectInfoWrapper, itemName, price, itemDescription, itemImage } = itemModal()
+    
+    const selectedOption = select.selectedOptions[0].value
+    if (selectedOption === '') {
+        selectInfoWrapper.style.visibility = 'hidden'
+    } else {
+        selectInfoWrapper.style.visibility = 'visible'
+        const index = category.items.findIndex((item) => item.name === selectedOption)
+        if (index !== -1) {
+            itemName.textContent = category.items[index].name ?? 'item name'
+            price.textContent = category.items[index].price + '€' ?? '0'
+            itemDescription.textContent = category.items[index].description ?? 'item description'
+            itemImage.src = category.items[index].imageUrl ?? './assets/images/story-mood.png'
+            itemImage.alt = category.items[index].name ?? 'image of item'
+        }
+    }
 
     select.addEventListener('change', () => {
         const selectedOption = select.selectedOptions[0].value
-        if(selectedOption === '') {
+        if (selectedOption === '') {
             selectInfoWrapper.style.visibility = 'hidden'
         } else {
             selectInfoWrapper.style.visibility = 'visible'
             const index = category.items.findIndex((item) => item.name === selectedOption)
-            if(index !== -1) {
-                price.textContent = category.items[index].price + '€'
+            if (index !== -1) {
+                itemName.textContent = category.items[index].name ?? 'item name'
+                price.textContent = category.items[index].price + '€' ?? '0'
+                itemDescription.textContent = category.items[index].description ?? 'item description'
+                itemImage.src = category.items[index].imageUrl ?? './assets/images/story-mood.png'
+                itemImage.alt = category.items[index].name ?? 'image of item'
             }
         }
     })
 
-        li.appendChild(selectInfoWrapper)
-
+    li.appendChild(selectInfoWrapper)
 
     return li
 }
-
-/* 
-<li class="info">
-                                    <img src="./assets/images/check.svg" alt="check image" class="check-img">
-                                    <select class="info-text" name="fem-goodies" id="fem-goodies">
-                                        <option value="" selected disabled>Goodies Vibrador</option>
-                                        <option value="Goodies Vibrador de Ponto g de Algodão e Usb Bunny Silicone Fúcsia">Goodies Vibrador de Ponto g de Algodão e Usb Bunny Silicone Fúcsia</option>
-                                        <option value="Goodies Sweety Vibrador Punto g Usb Silicona Fuchsi">Goodies Sweety Vibrador Punto g Usb Silicona Fuchsi</option>
-                                        <option value="Goodies Cakey Vibrador Punto g y Conejito Usb Silicona Fuchsia">Goodies Cakey Vibrador Punto g y Conejito Usb Silicona Fuchsia</option>
-                                        <option value="Goodies Honey G-spot Vibrador Silicone Usb Fúcsia">Goodies Honey G-spot Vibrador Silicone Usb Fúcsia</option>
-                                        <option value="Vibrador Ünihörn Navyspace Com Línguas Giratórias Azul">Vibrador Ünihörn Navyspace Com Línguas Giratórias Azul</option>
-                                        <option value="Vibrador de Veludo Engily Ross Com Impulso e Pulsação">Vibrador de Veludo Engily Ross Com Impulso e Pulsação</option>
-                                    </select>
-                                </li>
-
-*/
