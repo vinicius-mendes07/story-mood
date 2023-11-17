@@ -4,7 +4,8 @@
     --red: #dc3545;
     --dark-red: #920a1e;
     --text-dark: #080708;
-    --blue-btn: #0291CB;
+    --light-blue: #0291CB;
+    --dark-blue: #0b6081;
 }
 
 * {
@@ -140,22 +141,37 @@ body {
     height: calc(100vh-80px);
 }
 
+.card-wrapper {
+    background-image: url(../assets/images/pack-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pack-card {
     width: 290px;
-    border: 2px solid var(--dark-red);
+    /* border: 2px solid var(--dark-red); */
     box-shadow: 0 8px 8px 0 rgb(2 25 65 / 8%);
     padding: 16px 24px;
     height: 530px;
-    border-radius: 25px;
-    background: linear-gradient(0deg, rgba(195, 8, 8, 0.84) 0, rgba(195, 8, 8, 0.27) 22.92%, rgba(217, 217, 217, 0) 50%, rgba(217, 217, 217, 0) 70.73%, rgba(217, 217, 217, 0) 80.73%);
+    /* border-radius: 25px; */
+    /* background: linear-gradient(0deg, rgba(195, 8, 8, 0.84) 0, rgba(195, 8, 8, 0.27) 22.92%, rgba(217, 217, 217, 0) 50%, rgba(217, 217, 217, 0) 70.73%, rgba(217, 217, 217, 0) 80.73%); */
     /* background-color: #fff; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* background-color: red; */
+
+    
 }
 
 .pack-title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     color: var(--text-dark);
     text-transform: uppercase;
@@ -191,6 +207,7 @@ body {
     z-index: 2;
     visibility: hidden;
     max-height: 125px;
+    /* box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.8); */
     overflow: auto;
 }
 
@@ -213,6 +230,7 @@ body {
     color: var(--text-dark);
     text-transform: uppercase;
     text-align: center;
+    font-size: 1em;
 }
 
 .price-in-months {
@@ -234,7 +252,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-top: 10px;
 }
 
@@ -269,6 +287,57 @@ select {
     align-items: center;
 }
 
+.slider-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.switch {
+    width: 35px;
+    height: 18px;
+    border: 2px solid var(--light-blue);
+    border-radius: 28px;
+    position: relative;
+    background-color: rgba(8, 7, 8, 0.10);
+    cursor: pointer;
+}
+
+.check {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.check:checked ~ .slider{
+    left: 50%;
+    background-color: var(--dark-blue);
+}
+:not(.check:checked) ~ .slider {
+    left: 0;
+}
+
+.slider {
+    background-color: #fff;
+    border: 2px solid var(--light-blue);
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.add-fantasy-btn {
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.add-fantasy-btn:hover {
+    color: var(--dark-blue);
+}
+
 .total-price {
     text-align: start;
     width: 100%;
@@ -279,27 +348,26 @@ select {
 }
 
 .start-now-btn {
-    font-size: 14px;
-    /* width: 65px;
-    height: 65px; */
-    padding: 14px 43px;
-    color: #fbfbfb;
-    border: 2px solid #fbfbfb;
-    border-radius: 15pt;
-    /* border: none;
-    border-radius: 100%; */
-    background-color: transparent;
-    /* background-color: var(--blue-btn); */
+    font-size: 16px;
+    width: 70px;
+    height: 70px;
+    /* padding: 14px 43px; */
+    color: #fff;
+    /* border: 2px solid #a02b2b;
+    border-radius: 15pt; */
+    border: none;
+    border-radius: 100%;
+    /* background-color: transparent; */
+    background-color: var(--light-blue);
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     cursor: pointer;
     transition: 0.3s;
 }
 
 .start-now-btn:hover {
-    background-color: #0a7099;
-    background-color: #650404;
+    background-color: var(--dark-blue);
 }
 
 
@@ -330,5 +398,9 @@ select {
 
     .sec-title {
         font-size: 40px;
+    }
+
+    .card-wrapper {
+        width: 400px;
     }
 }
