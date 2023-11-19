@@ -19,6 +19,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 body {
     min-height: 100vh;
 }
@@ -156,7 +157,6 @@ body {
 .pack-card {
     width: 290px;
     /* border: 2px solid var(--dark-red); */
-    box-shadow: 0 8px 8px 0 rgb(2 25 65 / 8%);
     padding: 16px 24px;
     height: 530px;
     /* border-radius: 25px; */
@@ -165,9 +165,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: red; */
-
-    
 }
 
 .pack-title {
@@ -211,7 +208,7 @@ body {
     overflow: auto;
 }
 
-.info-icon:hover ~.pack-explanation {
+.info-icon:hover~.pack-explanation {
     opacity: 1;
     visibility: visible;
 }
@@ -259,7 +256,7 @@ body {
 .info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .check-img {
@@ -292,6 +289,7 @@ select {
     gap: 10px;
     width: 100%;
 }
+
 .switch {
     width: 35px;
     height: 18px;
@@ -307,11 +305,13 @@ select {
     height: 100%;
     opacity: 0;
 }
-.check:checked ~ .slider{
+
+.check:checked~.slider {
     left: 50%;
     background-color: var(--dark-blue);
 }
-:not(.check:checked) ~ .slider {
+
+:not(.check:checked)~.slider {
     left: 0;
 }
 
@@ -326,6 +326,7 @@ select {
     border-radius: 50%;
     transition: 0.5s;
 }
+
 .add-fantasy-btn {
     font-size: 14px;
     border: none;
@@ -381,11 +382,11 @@ select {
     .header {
         height: 85px;
     }
-    
+
     .header-logo {
         width: 60pt;
     }
-    
+
     .talk-to-me-btn {
         padding: 10px 34px;
         font-size: 16px;
@@ -394,6 +395,7 @@ select {
     .sec-2 {
         padding: 0;
         padding-bottom: 120px;
+        /* ajustar o padding acima */
     }
 
     .sec-title {
@@ -402,5 +404,53 @@ select {
 
     .card-wrapper {
         width: 400px;
+    }
+}
+
+@media (max-width: 510px) {
+    .card-wrapper {
+        width: 375px;
+        height: 560px;
+    }
+
+    .pack-card {
+        width: 290px;
+        padding: 0;
+        height: 500px;
+    }
+
+    .pack-title {
+        font-size: 24px;
+    }
+
+    .info-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .pack-subtitle {
+        font-size: 0.9em;
+    }
+
+    .switch {
+        width: 33px;
+        height: 16px;
+    }
+
+    .slider {
+        width: 10px;
+        height: 10px;
+    }
+
+    .total-price {
+        margin-top: 0px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .start-now-btn {
+        font-size: 14px;
+        width: 65px;
+        height: 65px;
     }
 }
