@@ -22,7 +22,9 @@ export function createFantasyModal(pack) {
         height: 100%;
     `
     closeDiv.addEventListener('click', () => {
-        document.querySelector('body').removeChild(modalContainer)
+        const body = document.querySelector('body')
+        body.removeChild(modalContainer)
+        body.style.overflow = 'visible'
     })
 
     const itemsModal = document.createElement('div')
@@ -70,7 +72,9 @@ export function createFantasyModal(pack) {
     closeBtn.src = './assets/images/x.png'
 
     closeBtn.addEventListener('click', () => {
-        document.querySelector('body').removeChild(modalContainer)
+        const body = document.querySelector('body')
+        body.removeChild(modalContainer)
+        body.style.overflow = 'visible'
     })
 
     modalHeader.appendChild(totalPrice)

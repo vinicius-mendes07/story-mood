@@ -9,6 +9,7 @@ async function misteriousCoupleFantasyModal() {
 
     const body = document.querySelector('body')
     body.appendChild(modalContainer)
+    body.style.overflow = 'hidden'
 }
 
 const misteriousCoupleFantasyBtn = document.getElementById('misterious-couple-fantasy')
