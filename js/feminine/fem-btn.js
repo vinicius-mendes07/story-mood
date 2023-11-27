@@ -10,9 +10,9 @@ async function femBtnClick() {
 
     let packMessage = `Olá, gostaria de adquirir este kit:\nEstagiario: pack feminino\n\n`
 
-    const total = document.getElementById('fem-total-price')
+    const total = document.getElementById('fem-total-price').textContent
 
-    handleClick(selects, femininePack, packMessage, total.textContent)
+    handleClick(selects, femininePack, packMessage, total)
 }
 
 const femBtn = document.getElementById('fem-btn')

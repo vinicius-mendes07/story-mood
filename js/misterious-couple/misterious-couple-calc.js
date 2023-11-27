@@ -8,12 +8,12 @@ export async function misteriousCoupleCalc() {
 
     if (window !== 'undefined') {
         const selects = document.getElementsByName('misterious-couple-pack')
-        selects.forEach((select) => {
 
-                const total = calculateTotal(selects, misteriousCouplePack)
+        const total = calculateTotal(selects, misteriousCouplePack)
 
-                const misteriousCoupleTotal = document.getElementById('misterious-couple-total-price')
-                misteriousCoupleTotal.textContent = total.toFixed(2) + '€'
-            })
+        const misteriousCoupleTotal = document.getElementById('misterious-couple-total-price')
+        misteriousCoupleTotal.textContent = total.toFixed(2) + '€'
+        
+        return total
     }
 }

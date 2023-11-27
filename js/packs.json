@@ -234,5 +234,73 @@
                 }
             ]
         }
+    ],
+    "misteriousCoupleFantasy": [
+        {
+            "categoryName": "Máscara Abertura",
+            "items": [
+                {
+                    "name": "Máscara Abertura",
+                    "price": "11",
+                    "description": "Um acessório perfeito e essencial para qualquer amante de BDSM. Caracteristicas: Com abertura na parte dos olhos; Materiais elásticos; Luz",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/mascara-abertura.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "Facial com Tampa",
+            "items": [
+                {
+                    "name": "BDSM Arnês Couro Vegano",
+                    "price": "12",
+                    "description": "Revestido com tachas e materiais da mais alta qualidade, este arnês se tornará essencial em sua coleção BDSM. Caracteristicas: couro vegano; 100% ajustável; Anel-O; Acessórios para colocar com Vibrador com Base; Vibrador não incluído",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/bdsm-arnes-couro-vegano.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "BDSM",
+            "items": [
+                {
+                    "name": "BDSM Chicote Facial Ajustável",
+                    "price": "18",
+                    "description": "Entre no mundo mais hardcore do BDSM com este arnês de boca. Este arnês facial é totalmente ajustável com fivelas nas costas e no queixo. A frente é redonda e coberta com tachas. Bem no centro você vai encontrar um acessório que você pode tirar e colocar, preso ao resto com uma corrente, que vai deixar a boca do seu submisso exposta apenas quando você quiser. Características: Chicote Facial; Com acessório destacável na boca; Alças ajustáveis; Guarnecido",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/bdsm-chicote-facial-ajustavel.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "Tanga",
+            "items": [
+                {
+                    "name": "Tanga Negro",
+                    "price": "4.82",
+                    "description": "Tanga preta sensual e provocante, perfeita para qualquer ocasião. Tamanho único 100% poliamida",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/tanga-negro.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "Máscara Feminina",
+            "items": [
+                {
+                    "name": "Eleancia",
+                    "price": "5",
+                    "description": "Características: Elegante, sensual e provocante; Delicado laço de cetim; Encaixe perfeito garantido, tecidos macios e elásticos; Composição: 100% poliéster",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/eleancia.png"
+                }
+            ]
+        },
+        {
+            "categoryName": "Poder Feminino",
+            "items": [
+                {
+                    "name": "Sexy Hing",
+                    "price": "3.80",
+                    "description": "Inflame o seu lado mais picante com este bodystocking. Apresenta um decote em forma de barco e um padrão de malha com um belo padrão no peito e nos braços. Características: Tamanhos disponíveis: S-L e XL; Elástico; Design de grade; Virilha aberta; Fio dental não incluído",
+                    "imageUrl": "./assets/images/pack-casal-misterioso/pack-fantasia/sexy-hing.png"
+                }
+            ]
+        }
     ]
 }
