@@ -67,7 +67,7 @@ export function createFantasyModal(pack) {
         height: 18px;
         cursor: pointer;
     `
-    closeBtn.src = '../assets/images/x.png'
+    closeBtn.src = './assets/images/x.png'
 
     closeBtn.addEventListener('click', () => {
         document.querySelector('body').removeChild(modalContainer)
