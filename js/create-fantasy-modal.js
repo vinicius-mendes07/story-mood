@@ -15,17 +15,18 @@ export function createFantasyModal(pack) {
         align-items: center;
         background-color: rgba(0, 0, 0, 0.7);
     `
+    modalContainer.animate([
+        {opacity: 0},
+        {opacity: 1},
+    ], 300)
+
     const closeDiv = document.createElement('div')
     closeDiv.style = `
         position: fixed;
         width: 100%;
         height: 100%;
     `
-    closeDiv.addEventListener('click', () => {
-        const body = document.querySelector('body')
-        body.removeChild(modalContainer)
-        body.style.overflow = 'visible'
-    })
+    closeDiv.addEventListener('click', handleCloseModal)
 
     const itemsModal = document.createElement('div')
     itemsModal.style = `
@@ -43,6 +44,10 @@ export function createFantasyModal(pack) {
         overflow: auto;
         z-index: 11;
     `
+    itemsModal.animate([
+        {transform: 'scale(0)'},
+        {transform: 'scale(1)'},
+    ], 300)
 
     const modalHeader = document.createElement('div')
     modalHeader.style = `
@@ -71,11 +76,7 @@ export function createFantasyModal(pack) {
     `
     closeBtn.src = './assets/images/x.png'
 
-    closeBtn.addEventListener('click', () => {
-        const body = document.querySelector('body')
-        body.removeChild(modalContainer)
-        body.style.overflow = 'visible'
-    })
+    closeBtn.addEventListener('click', handleCloseModal)
 
     modalHeader.appendChild(totalPrice)
     modalHeader.appendChild(closeBtn)
@@ -100,6 +101,26 @@ export function createFantasyModal(pack) {
             itemsModal.appendChild(separator)
         }
         
+    }
+
+    function handleCloseModal() {
+        modalContainer.animate([
+            {opacity: 1},
+            {opacity: 0},
+        ], 300)
+        
+        itemsModal.animate([
+            {transform: 'scale(1)'},
+            {transform: 'scale(0)'},
+        ], 300)
+
+        setTimeout(() => {
+            const body = document.querySelector('body')
+            body.removeChild(modalContainer)
+        }, 300)
+        
+        closeBtn.removeEventListener('click', handleCloseModal)
+        closeDiv.removeEventListener('click', handleCloseModal)
     }
 
     modalContainer.appendChild(itemsModal)

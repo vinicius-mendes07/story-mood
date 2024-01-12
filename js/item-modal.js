@@ -41,7 +41,8 @@ export function itemModal() {
         border-radius: 10px;
         top: 100%;
         right: -15px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
         opacity: 0;
         transition: .3s;
         z-index: 2;
